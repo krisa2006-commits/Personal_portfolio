@@ -15,14 +15,11 @@ function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-[#1E293B] bg-[#0B1120]/95 backdrop-blur-md">
-      {/* Navbar Container */}
       <div className="mx-auto flex w-[92%] max-w-[1400px] items-center justify-between px-6 py-4">
-        {/* Logo */}
         <a href="#home" className="text-2xl font-bold tracking-wide text-white">
           KRISHA<span className="text-[#8B7CF6]">.</span>
         </a>
 
-        {/* Desktop Menu */}
         <div className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
             <a
@@ -34,7 +31,6 @@ function Navbar() {
             </a>
           ))}
 
-          {/* Download CV */}
           <a
             href="/resume/Krisha_Chaniyara_CV.pdf"
             download
@@ -45,7 +41,6 @@ function Navbar() {
           </a>
         </div>
 
-        {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="text-white md:hidden"
@@ -54,7 +49,6 @@ function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {isOpen && (
         <div className="border-t border-[#1E293B] bg-[#0B1120] md:hidden">
           <div className="mx-auto flex w-[92%] max-w-[1400px] flex-col gap-4 px-6 py-5">
@@ -69,7 +63,6 @@ function Navbar() {
               </a>
             ))}
 
-            {/* Mobile Download CV */}
             <a
               href="/resume/KRISA CHANIYARA.pdf"
               download

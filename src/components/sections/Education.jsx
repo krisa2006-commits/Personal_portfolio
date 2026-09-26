@@ -20,7 +20,6 @@ function Education() {
     <section id="education" className="border-b border-[#1E293B] bg-[#0B1120]">
       <div className="mx-auto w-[92%] max-w-[1400px] px-6 py-8">
         <div className="grid items-center gap-8 lg:grid-cols-[0.9fr_2fr]">
-          {/* Left Heading */}
           <div>
             <p className="mb-1 text-sm font-semibold uppercase tracking-[0.25em] text-[#8B7CF6]">
               Education
@@ -31,18 +30,15 @@ function Education() {
             </h2>
           </div>
 
-          {/* Timeline */}
           <div className="grid gap-8 md:grid-cols-2">
             {education.map((item) => (
               <div key={item.title} className="relative flex gap-4">
-                {/* Timeline Line + Dot */}
                 <div className="relative flex flex-col items-center">
                   <span className="h-5 w-5 rounded-full border-2 border-[#8B7CF6] bg-[#8B7CF6] shadow-[0_0_12px_rgba(139,124,246,0.4)]" />
 
                   <span className="mt-1 h-full w-px bg-[#8B7CF6]/60" />
                 </div>
 
-                {/* Content */}
                 <div className="pb-4">
                   <p className="text-sm text-[#94A3B8]">{item.year}</p>
 

@@ -76,11 +76,7 @@ function Skills() {
       className="border-b border-[#1E293B] bg-[#0B1120]"
     >
       <div className="mx-auto w-[92%] max-w-[1400px] px-6 py-20">
-
-        {/* Section Heading */}
         <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-
-          {/* Left Heading */}
           <div>
             <p className="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-[#8B7CF6]">
               My Skills
@@ -90,8 +86,6 @@ function Skills() {
               Technologies I Work With
             </h2>
           </div>
-
-          {/* View All Skills Button */}
           <a
             href="#Skills"
             className="hidden items-center gap-2 rounded-lg border border-[#8B7CF6] px-5 py-2.5 text-sm font-semibold text-[#8B7CF6] transition-colors duration-300 hover:bg-[#8B7CF6] hover:text-white md:flex"
@@ -101,7 +95,6 @@ function Skills() {
           </a>
         </div>
 
-        {/* Skills Grid */}
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
 
           {skills.map((skill) => (
@@ -109,21 +102,17 @@ function Skills() {
               key={skill.name}
               className="group flex items-center gap-4 rounded-xl border border-[#1E293B] bg-[#111827] px-5 py-4 transition-all duration-300 hover:-translate-y-1 hover:border-[#8B7CF6]/50"
             >
-              {/* Icon */}
               <span className={`text-3xl ${skill.color}`}>
                 {skill.icon}
               </span>
 
-              {/* Name */}
               <span className="text-sm font-medium text-[#F8FAFC] transition-colors duration-300 group-hover:text-[#8B7CF6]">
                 {skill.name}
               </span>
             </div>
           ))}
-
         </div>
-
-        {/* Mobile Button */}
+        
         <div className="mt-6 flex md:hidden">
           <a
             href="#Skills"

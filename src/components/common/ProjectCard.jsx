@@ -4,8 +4,6 @@ import { FaGithub } from "react-icons/fa";
 function ProjectCard({ project }) {
   return (
     <div className="group overflow-hidden rounded-xl border border-[#1E293B] bg-[#111827] transition-all duration-300 hover:-translate-y-1 hover:border-[#8B7CF6]/50">
-
-      {/* Project Image */}
       <div className="relative h-52 overflow-hidden">
         <img
           src={project.image}
@@ -16,20 +14,13 @@ function ProjectCard({ project }) {
         <div className="absolute inset-0 bg-[#0B1120]/10 transition-all duration-300 group-hover:bg-transparent" />
       </div>
 
-      {/* Project Content */}
       <div className="p-5">
+        <h3 className="text-xl font-semibold text-white">{project.title}</h3>
 
-        {/* Title */}
-        <h3 className="text-xl font-semibold text-white">
-          {project.title}
-        </h3>
-
-        {/* Description */}
         <p className="mt-3 text-sm leading-6 text-[#94A3B8]">
           {project.description}
         </p>
 
-        {/* Technologies */}
         <div className="mt-4 flex flex-wrap gap-2">
           {project.technologies.map((technology) => (
             <span
@@ -41,10 +32,7 @@ function ProjectCard({ project }) {
           ))}
         </div>
 
-        {/* Buttons */}
         <div className="mt-5 flex gap-3">
-
-          {/* Live Demo */}
           <a
             href={project.live}
             target="_blank"
@@ -55,7 +43,6 @@ function ProjectCard({ project }) {
             <ArrowUpRight size={16} />
           </a>
 
-          {/* GitHub */}
           <a
             href={project.github}
             target="_blank"
@@ -65,7 +52,6 @@ function ProjectCard({ project }) {
             GitHub
             <FaGithub size={16} />
           </a>
-
         </div>
       </div>
     </div>

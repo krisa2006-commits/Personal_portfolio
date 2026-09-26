@@ -4,7 +4,6 @@ function Contact() {
   return (
     <section id="contact" className="border-b border-[#1E293B] bg-[#0B1120]">
       <div className="mx-auto grid w-[92%] max-w-[1400px] gap-12 px-6 py-20 lg:grid-cols-2 lg:gap-20">
-        {/* Left Content */}
         <div>
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-[#8B7CF6]">
             Contact
@@ -21,9 +20,7 @@ function Contact() {
             interesting projects. Feel free to reach out and let’s connect.
           </p>
 
-          {/* Contact Information */}
           <div className="mt-8 space-y-5">
-            {/* Email */}
             <a
               href="mailto:krishachaniyara2706@gmail.com"
               className="flex items-center gap-4 text-[#CBD5E1] transition-colors duration-300 hover:text-[#8B7CF6]"
@@ -41,7 +38,6 @@ function Contact() {
               </span>
             </a>
 
-            {/* Phone */}
             <a
               href="tel:+919924846806"
               className="flex items-center gap-4 text-[#CBD5E1] transition-colors duration-300 hover:text-[#8B7CF6]"
@@ -57,7 +53,6 @@ function Contact() {
               </span>
             </a>
 
-            {/* Location */}
             <div className="flex items-center gap-4 text-[#CBD5E1]">
               <span className="flex h-11 w-11 items-center justify-center rounded-lg border border-[#1E293B] bg-[#111827] text-[#8B7CF6]">
                 <MapPin size={20} />
@@ -74,10 +69,8 @@ function Contact() {
           </div>
         </div>
 
-        {/* Contact Form */}
         <div className="rounded-2xl border border-[#1E293B] bg-[#111827] p-6 md:p-8">
           <form className="space-y-5">
-            {/* Name + Email */}
             <div className="grid gap-5 sm:grid-cols-2">
               <div>
                 <label className="mb-2 block text-sm font-medium text-[#CBD5E1]">
@@ -104,7 +97,6 @@ function Contact() {
               </div>
             </div>
 
-            {/* Subject */}
             <div>
               <label className="mb-2 block text-sm font-medium text-[#CBD5E1]">
                 Subject
@@ -117,7 +109,6 @@ function Contact() {
               />
             </div>
 
-            {/* Message */}
             <div>
               <label className="mb-2 block text-sm font-medium text-[#CBD5E1]">
                 Your Message
@@ -130,7 +121,6 @@ function Contact() {
               />
             </div>
 
-            {/* Submit */}
             <button
               type="submit"
               className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#8B7CF6] px-6 py-3 font-semibold text-white transition-colors duration-300 hover:bg-[#A78BFA]"

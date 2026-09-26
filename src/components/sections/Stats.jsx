@@ -35,10 +35,7 @@ function Stats() {
                 index !== stats.length - 1 ? "border-r border-[#1E293B]" : ""
               }`}
             >
-              {/* Icon */}
               <div className="shrink-0 text-[#8B7CF6]">{stat.icon}</div>
-
-              {/* Content */}
               <div>
                 <h3 className="text-2xl font-bold leading-none text-white">
                   {stat.value}

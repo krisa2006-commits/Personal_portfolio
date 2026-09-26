@@ -54,12 +54,10 @@ function TechStack() {
             }`}
           >
             <div className="flex items-center gap-2">
-              {/* Logo */}
               <span className={`text-3xl ${technology.iconClass}`}>
                 {technology.icon}
               </span>
 
-              {/* Only Text Hover */}
               <span className="cursor-pointer whitespace-nowrap text-sm font-medium text-[#F8FAFC] transition-colors duration-300 hover:text-[#8B7CF6] md:text-base">
                 {technology.name}
               </span>

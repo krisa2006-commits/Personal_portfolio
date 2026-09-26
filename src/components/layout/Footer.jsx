@@ -5,19 +5,15 @@ function Footer() {
   return (
     <footer className="border-t border-[#1E293B] bg-[#0B1120]">
       <div className="mx-auto flex w-[92%] max-w-[1400px] flex-col items-center justify-between gap-5 px-6 py-6 md:flex-row">
-        {/* Logo */}
         <a href="#home" className="text-2xl font-bold tracking-wide text-white">
           KRISHA<span className="text-[#8B7CF6]">.</span>
         </a>
 
-        {/* Copyright */}
         <p className="text-center text-xs text-[#64748B] md:text-sm">
           © 2026 Krisha Chaniyara. All Rights Reserved.
         </p>
 
-        {/* Social Links */}
         <div className="flex items-center gap-3">
-          {/* GitHub */}
           <a
             href="https://github.com/"
             target="_blank"
@@ -28,7 +24,6 @@ function Footer() {
             <FaGithub size={16} />
           </a>
 
-          {/* LinkedIn */}
           <a
             href="https://www.linkedin.com/"
             target="_blank"
@@ -39,7 +34,6 @@ function Footer() {
             <FaLinkedinIn size={16} />
           </a>
 
-          {/* Instagram */}
           <a
             href="https://www.instagram.com/"
             aria-label="Instagram"
@@ -48,7 +42,6 @@ function Footer() {
             <FaInstagram size={16} />
           </a>
 
-          {/* Email */}
           <a
             href="mailto:krishachaniyara2706@gmail.com"
             aria-label="Email"
