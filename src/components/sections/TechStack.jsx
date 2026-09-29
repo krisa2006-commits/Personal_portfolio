@@ -40,33 +40,36 @@ const technologies = [
   },
 ];
 
-function TechStack() {
+const TechStack = () => {
   return (
-    <section className="border-y border-[#1E293B] bg-[#0B1120]">
-      <div className="grid min-h-[76px] w-full grid-cols-7">
-        {technologies.map((technology, index) => (
-          <div
-            key={technology.name}
-            className={`flex items-center justify-center px-3 ${
-              index !== technologies.length - 1
-                ? "border-r border-[#263449]"
-                : ""
-            }`}
-          >
-            <div className="flex items-center gap-2">
-              <span className={`text-3xl ${technology.iconClass}`}>
-                {technology.icon}
-              </span>
-
-              <span className="cursor-pointer whitespace-nowrap text-sm font-medium text-[#F8FAFC] transition-colors duration-300 hover:text-[#8B7CF6] md:text-base">
-                {technology.name}
-              </span>
+    <section className="border-y border-[#1E293B] bg-[#0D1628]">
+      <div className="hide-scrollbar w-full overflow-x-auto">
+        <div className="mx-auto flex min-w-max items-center justify-center lg:grid lg:min-h-[76px] lg:w-full lg:grid-cols-7">
+          {technologies.map((technology, index) => (
+            <div
+              key={technology.name}
+              className={`flex h-[76px] min-w-[145px] items-center justify-center px-4 sm:min-w-[170px] lg:min-w-0 ${
+                index !== technologies.length - 1
+                  ? "border-r border-[#263449]"
+                  : ""
+              }`}
+            >
+              <div className="flex items-center gap-2">
+                <span
+                  className={`text-2xl sm:text-3xl ${technology.iconClass}`}
+                >
+                  {technology.icon}
+                </span>
+                <span className="cursor-pointer whitespace-nowrap text-sm font-medium text-[#F8FAFC] transition-colors duration-300 hover:text-[#8B7CF6] sm:text-base">
+                  {technology.name}
+                </span>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
-}
+};
 
 export default TechStack;
