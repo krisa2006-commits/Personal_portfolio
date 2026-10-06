@@ -32,7 +32,7 @@ function Navbar() {
           ))}
 
           <a
-            href="/resume/Krisha_Chaniyara_CV.pdf"
+            href="/resume/KRISA CHANIYARA.pdf"
             download
             className="flex items-center gap-2 rounded-lg bg-[#8B7CF6] px-5 py-2.5 text-sm font-semibold text-white transition-colors duration-300 hover:bg-[#A78BFA]"
           >
